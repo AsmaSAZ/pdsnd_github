@@ -2,9 +2,13 @@
 30/ december/ 2020
 
 
-### Project Title
 
-Bikeshare Project  
+
+
+### Project Title
+Bikeshare Project  of three major cities in the United States
+
+
 ### Description
 Python project of exploring data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington, using Python 3, NumPy, and pandas.
 
