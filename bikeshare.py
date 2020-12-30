@@ -22,7 +22,7 @@ def get_filters():
     city= input( "Enter one of the cities:chicago, new york city or washington  ").lower()
 
     while city not in ['chicago', 'new york city', 'washington']:
-        print('Not Valid')
+        print('The input data are not valid')
         city = input("Please Select one of the city between Chicago, New York City or Washington again: ").lower()
         if city =='new york city':
             break
