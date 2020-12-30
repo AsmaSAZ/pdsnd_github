@@ -17,6 +17,6 @@ The data files on the gitignore Washington , chicago and newyork city and the co
 
 
 ### Credits
-The lessons on the Udacity that's helped me a lot espicially the practices 
+The lessons on the Udacity that's helped me a lot espicially the practices
 
-Also, The instructures of the course 
+Also, The instructures of the course
