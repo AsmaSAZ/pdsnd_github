@@ -60,11 +60,11 @@ def Display_raw_data(df):
     counter2=5
  #keep a counter of the number of rows printed y.
     while True:
-        Display_answer = input("Display 5 raws of the data..  yes or no?\n").lower().replace(" ","")
+        Display_answer = input("Display 7 raws of the data..  yes or no?\n").lower().replace(" ","")
         if Display_answer == 'yes':
             print(df.iloc[counter1:counter2])
-            counter1=counter1+5
-            counter2=counter2+5
+            counter1=counter1+7
+            counter2=counter2+7
         elif Display_answer == "no": #Break the loop and continue the program
             break
           #handling if the used inter athor than yes or no
