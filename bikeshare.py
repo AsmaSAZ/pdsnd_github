@@ -22,7 +22,7 @@ def get_filters():
     city= input( "Enter one of the cities:chicago, new york city or washington  ").lower()
 
     while city not in ['chicago', 'new york city', 'washington']:
-        print('Not Valid')
+        print('The input data are not valid')
         city = input("Please Select one of the city between Chicago, New York City or Washington again: ").lower()
         if city =='new york city':
             break
@@ -44,7 +44,12 @@ def get_filters():
 
 
 
+<<<<<<< HEAD
     print('-'*30)
+=======
+
+    print('-'*40)
+>>>>>>> 4f1da831514562af9399eab4f649b246f402f49a
     return city, month, day
 
 
@@ -60,11 +65,19 @@ def Display_raw_data(df):
     counter2=5
  #keep a counter of the number of rows printed y.
     while True:
+<<<<<<< HEAD
         Display_answer = input("Display 7 raws of the data..  yes or no?\n").lower().replace(" ","")
         if Display_answer == 'yes':
             print(df.iloc[counter1:counter2])
             counter1=counter1+7
             counter2=counter2+7
+=======
+        Display_answer = input("Display 5 raws of the data..  yes or no?\n").lower().replace(" ","")
+        if Display_answer == 'yes':
+            print(df.iloc[counter1:counter2])
+            counter1=counter1+5
+            counter2=counter2+5
+>>>>>>> 4f1da831514562af9399eab4f649b246f402f49a
         elif Display_answer == "no": #Break the loop and continue the program
             break
           #handling if the used inter athor than yes or no
@@ -83,9 +96,16 @@ def load_data(city, month, day):
 
     #creates new column for the Month , Day and hours
     df['Start Time'] = pd.to_datetime(df['Start Time'])
+
+    # creates new column for Month
     df['month'] = df['Start Time'].dt.month
+    # creates new column for day
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
+<<<<<<< HEAD
+=======
+    # creates new column for hours
+>>>>>>> 4f1da831514562af9399eab4f649b246f402f49a
     df['hour'] = df['Start Time'].dt.hour
 
 
@@ -134,7 +154,7 @@ def time_stats(df):
 
 
     # display the most common start hour
-    popular_hour=df['hour'].mode()[0]
+      popular_hour=df['hour'].mode()[0]
     print("the most common start hour : ", popular_hour)
 
 
